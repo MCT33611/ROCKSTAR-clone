@@ -1,0 +1,448 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&family=Roboto:wght@100&family=Victor+Mono:wght@100;400;700&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #000000e2;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.logos
+{   
+    
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+.fa-bars {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.poster
+{   position: relative;
+    display: flex;
+    width: 100%;
+    height: 35rem;
+    background-color:black;
+}
+#slider {
+    
+    width: 57rem;
+    background-color: red;
+    overflow: hidden;
+    object-fit: cover;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 100%;
+    height: 35rem;
+    float: left;
+    width: 20%;
+    
+}
+
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200% ;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+.detiles {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Muli', sans-serif;
+    width: 36rem;
+    padding-left: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: max-content;
+    overflow: hidden;
+}
+.detiles h4 {
+    font-size: larger;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.detiles h1 {
+    font-size: xxx-large;
+    margin: 1rem;
+    cursor: pointer;
+}
+.detiles button {
+    cursor: pointer;
+    height: 4rem;
+    width: 20rem;
+    margin: 1rem;
+    background-color: transparent;
+    border-color: aliceblue;
+    color:white;
+    border-radius: 0.5rem;
+    
+    border-width: 2px;
+    font-size: 25px;
+    font-weight: 700;
+    transition: all 0.1s;
+}
+:hover.del-btn{
+    background-color: rgb(241, 181, 0);
+}
+
+.slider-lab {
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+
+.slider-lab label img {
+    opacity: 70%;
+    border-radius:50rem;
+    width: 4rem;
+    height: 6px;
+    margin: 6.5px;
+    cursor: pointer;
+} 
+
+
+.Newswire {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #131313;
+    width: 100%;
+    height: 147rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
+    font-family: 'Muli', sans-serif;
+    justify-items: space-between;
+}
+.Newswire h2 {
+    color: white;
+    cursor: pointer;
+    font-size: 40px;
+}
+.card-sec
+{   
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    margin-top: 1.5rem;
+}
+.card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 26rem;
+    height: 42rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+.card img 
+{
+    width: 100%;
+    border-radius: 10px;
+    height: max-content;
+}
+.name_del
+{
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.date {
+    display: flex;
+    width: 13rem;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+.name_del h1{
+
+        font-size: 26px;
+        margin-top: 42px;
+        color: white;
+    
+}
+
+.v_More
+{   cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.v_More img{
+    height: 2rem;
+    margin-top: -2px;
+}
+.v_More button{
+
+    background: transparent;
+    height: 30px;
+    width: 100px;
+    border-radius: 8px;
+    margin-bottom: -18px;
+    border-width:0 ;
+    color: white;
+    font-size: 20px;
+    
+}
+.v-button{
+    cursor: pointer;
+}
+
+:hover.v-button{
+    background-color: #fcaf17;
+}
+
+.G-row {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 9rem;
+    color: white;
+    width: 100%;
+    height: 30rem;
+    
+}
+.G-row h1{
+    width:100%;
+    cursor: pointer;
+}
+.Game-card-sec
+{   display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 28rem;
+}
+.Game-card{
+    cursor: pointer;
+    display: flex;
+    background-color: yellow;
+    width: 20rem;
+    height: 26rem;
+    border-radius: 6px;
+    
+}
+.Game-card img {
+    width: 20rem;
+    border-radius: 5px;
+}
+.sec{
+    margin-top: 2rem;
+}
+
+.footer
+{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    
+    background-color: black;
+    width: 100%;
+    height: 28rem;
+}
+.links-cond
+{   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: aqua; */
+    margin: 5rem;
+    width: 100%;
+    height: auto;
+}
+.sec-foot{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    width: 17rem;
+    align-items: center;
+}
+.links a{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size:20px;
+}
+#Subscribe{
+    display: flex;
+    justify-content:space-around;
+    width: 7rem;
+
+}
+#Subscribe i {
+    font-size: 12px;
+}
+.sec-foot button
+{   
+    cursor: pointer;
+    display: flex;
+    background: transparent;
+    width: 7rem;
+    height: 2rem;
+    border-width: 0;
+    margin-right: 15px;
+    color: #fff;
+    font-size: 17px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.copy-right {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 35rem;
+    align-items: center;
+    font-size: 12px;
+    opacity: 80%;
+}
+.copy-right a{
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+.soci-logo {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 13rem;
+    height: 3rem;
+    align-items: center;
+}
+
+.soci-logo i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.place {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+}
+.last h6{
+    font-size: 15px;
+    color: #ffffff;
+    
+}
+
+#Contact:hover#Contact{
+    color: #ffd723;
+}
+#Careers:hover#Careers{
+    color: #ffd723;
+}
+#Subscribe:hover#Subscribe{
+    color: #ffd723;
+}
+
+
+#Corporate:hover#Corporate{
+    color: #ffd723;
+}
+#Privacy:hover#Privacy{
+    color: #ffd723;
+}
+#Cookie_Settings:hover#Cookie_Settings{
+    color: #ffd723;
+}
+#Cookie_Policy:hover#Cookie_Policy{
+    color: #ffd723;
+}
+#Legal:hover#Legal{
+    color: #ffd723;
+}
+#Do:hover#Do{
+    color: #ffd723;
+}
+
+
+
+
+#twitch:hover#twitch i
+{
+    color: #ffd723;
+}
+#instagram:hover#instagram i
+{
+    color: #ffd723;
+}
+#twitter:hover#twitter i
+{
+    color: #ffd723;
+}
+#youtube:hover#youtube i
+{
+    color: #ffd723;
+}
+#facebook:hover#facebook i
+{
+    color: #ffd723;
+}
+
+
+
+
